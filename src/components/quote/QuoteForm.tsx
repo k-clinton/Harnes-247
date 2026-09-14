@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Send, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { QuoteState } from "@/lib/pricing";
+import { siteConfig } from "@/data/site";
 
 interface QuoteFormProps {
   state: QuoteState;
@@ -92,6 +93,13 @@ export function QuoteForm({ state }: QuoteFormProps) {
         <div className="bg-[#fafaf6] dark:bg-[#1a1a1a] p-4 text-xs uppercase tracking-wider text-foreground/80 border border-foreground/15 font-sans font-semibold">
           No upfront fees. Guarantee A or B.
         </div>
+        <a
+          href={siteConfig.url}
+          className="mt-4 w-full max-w-sm bg-[#111111] text-[#fafaf6] border border-[#111111] px-6 py-3 text-xs uppercase tracking-[0.18em] font-sans font-semibold transition-colors duration-300 hover:bg-[#c5a059] hover:text-[#111111] hover:border-[#c5a059]"
+          aria-label="Return to Harnes 24/7"
+        >
+          Back to Harnes 24/7
+        </a>
       </div>
     );
   }
