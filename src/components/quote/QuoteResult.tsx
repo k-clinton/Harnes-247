@@ -114,8 +114,8 @@ export function QuoteResult({ state }: QuoteResultProps) {
         </ul>
       </div>
 
-      <div className="bg-[transparent] dark:bg-[transparent] p-4 text-[11px] text-foreground/40 leading-relaxed border border-foreground/5">
-        <strong>Important Notice:</strong> This cost is a preliminary calculation estimate. The final quote will be confirmed by an academic coordinator after reviewing your course syllabus and specific portal requirements. Payments are structured in weekly installments after your grades are posted. We guarantee an A or B grade.
+      <div className="bg-[transparent] dark:bg-[transparent] p-4 text-[11px] text-accent leading-relaxed border border-foreground/5">
+        <strong className="text-accent">Important Notice:</strong> This cost is a preliminary calculation estimate. The final quote will be confirmed by an academic coordinator after reviewing your course syllabus and specific portal requirements. Payments are structured in weekly installments after your grades are posted. We guarantee an A or B grade.
       </div>
     </div>
   );
