@@ -90,7 +90,7 @@ export function QuoteForm({ state }: QuoteFormProps) {
         <p className="text-sm md:text-base text-foreground/85 max-w-sm leading-relaxed mb-6 font-sans font-medium">
           Thank you, <strong className="text-foreground">{name}</strong>. We have received your quote details and will review them shortly. An academic coordinator will contact you at <strong className="text-foreground">{email}</strong>{phone ? <> or <strong className="text-foreground">{phone}</strong></> : null} within one business day.
         </p>
-        <div className="bg-[#fafaf6] dark:bg-[#1a1a1a] p-4 text-xs uppercase tracking-wider text-foreground/80 border border-foreground/15 font-sans font-semibold">
+        <div className="bg-[#fafaf6] p-4 text-xs uppercase tracking-wider text-foreground/80 border border-foreground/15 font-sans font-semibold">
           No upfront fees. Guarantee A or B.
         </div>
         <a
