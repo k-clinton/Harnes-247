@@ -69,7 +69,10 @@ export function Navbar() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="text-sm text-foreground/70 hover:text-foreground transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#c5a059] rounded"
+                  className={`text-sm text-foreground/70 hover:text-foreground transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#c5a059] rounded ${
+                    pathname === item.href ? "border-b border-[#c5a059] pb-1 text-foreground" : ""
+                  }`}
+                  aria-current={pathname === item.href ? "page" : undefined}
                 >
                   {item.name}
                 </Link>
