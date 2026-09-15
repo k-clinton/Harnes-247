@@ -29,6 +29,15 @@ function InstagramIcon({ size = 16 }: { size?: number }) {
   );
 }
 
+function WhatsappIcon({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M20 11.5a8 8 0 0 1-11.8 7.1L4 20l1.4-4.1A8 8 0 1 1 20 11.5z" />
+      <path d="M8.5 8.5c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.6 1.4c.1.2.1.4-.1.6l-.5.6c.5 1 1.2 1.7 2.2 2.2l.6-.5c.2-.2.4-.2.6-.1l1.4.6c.3.1.4.3.4.5v.5c0 .3 0 .5-.4.7-.4.2-1 .3-1.5.1-1.3-.3-2.4-1-3.4-2s-1.7-2.1-2-3.4c-.2-.5-.1-1.1.1-1.5z" />
+    </svg>
+  );
+}
+
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -119,6 +128,15 @@ export function Footer() {
 
           {/* Social links */}
           <div className="flex items-center gap-5">
+            <a
+              href={siteConfig.socials.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with Harnes 24/7 on WhatsApp"
+              className="text-foreground/45 hover:text-foreground transition-colors duration-200"
+            >
+              <WhatsappIcon size={16} />
+            </a>
             <a
               href={siteConfig.socials.twitter}
               target="_blank"
