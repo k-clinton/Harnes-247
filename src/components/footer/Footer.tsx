@@ -121,13 +121,13 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="pt-8 grid grid-cols-1 md:grid-cols-3 items-center gap-6">
           <p className="text-xs text-foreground/35">
             &copy; {year} Harnes 24/7. All rights reserved.
           </p>
 
           {/* Social links */}
-          <div className="flex items-center gap-5">
+          <div className="flex items-center justify-center gap-5">
             <a
               href={siteConfig.socials.whatsapp}
               target="_blank"
@@ -135,7 +135,7 @@ export function Footer() {
               aria-label="Chat with Harnes 24/7 on WhatsApp"
               className="text-foreground/45 hover:text-foreground transition-colors duration-200"
             >
-              <WhatsappIcon size={16} />
+              <WhatsappIcon size={18} />
             </a>
             <a
               href={siteConfig.socials.twitter}
@@ -167,7 +167,7 @@ export function Footer() {
           </div>
 
           {/* Legal */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 md:justify-self-end">
             <Link
               href="/privacy"
               className="text-xs text-foreground/35 hover:text-foreground/65 transition-colors duration-200"
