@@ -135,7 +135,7 @@ export function Footer() {
               aria-label="Chat with Harnes 24/7 on WhatsApp"
               className="text-foreground/45 hover:text-foreground transition-colors duration-200"
             >
-              <WhatsappIcon size={18} />
+              <WhatsappIcon size={22} />
             </a>
             <a
               href={siteConfig.socials.twitter}
