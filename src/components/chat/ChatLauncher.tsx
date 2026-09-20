@@ -50,7 +50,7 @@ export function ChatLauncher() {
             className="flex items-center justify-center gap-2.5 bg-accent hover:bg-accent-hover text-accent-foreground h-12 md:h-14 px-4 md:px-6 shadow-xl border border-accent/20 transition-all duration-300 rounded-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent group"
             aria-label="Chat with us"
           >
-            <WhatsAppIcon size={22} />
+            <WhatsAppIcon size={28} />
 
             {/* Desktop Label */}
             <span className="hidden md:inline text-xs font-semibold uppercase tracking-wider font-sans select-none">
